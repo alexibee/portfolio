@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Projects from './Projects.js';
 import Articles from './Articles.js';
 import About from './About.js';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
             <Link to="/about" className="item">About</Link>
           </div>
         </div>
+        <Projects />
       </div>
     </BrowserRouter>
   );
