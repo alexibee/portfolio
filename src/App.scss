@@ -4,7 +4,10 @@ $background-color: rgb(26, 27, 29);
 
 .App {
   text-align: center;
-  background-color: lighten($background-color,20%);
+  background-image: url('turq.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .App-logo {
@@ -45,6 +48,9 @@ $background-color: rgb(26, 27, 29);
 a {
   text-decoration: none;
   color: $light-color;
+  &:hover {
+    color: $color;
+  }
 }
 
 .navigation {
@@ -53,6 +59,7 @@ a {
   align-items: center;
   padding: 10px 20px;
   background-color: lighten($background-color, 10%);
+  opacity: 0.9;
 }
 
 .logo-image {
@@ -73,11 +80,17 @@ a {
 }
 
 .project {
-  height: 50vh;
-  width: 40vw;
-  padding-top: 50px;
-  border: 3px solid black;
-  border-radius: 40px;
+  background-color: lighten($background-color, 10%);
+  opacity: 0.9;
+  min-height: 50vh;
+  min-width: 40vw;
+  a {
+  }
+  &:hover {
+    opacity: 1;
+    background-color: lighten($background-color, 5%);
+    color: $color;
+  }
 }
 
 .projects {
@@ -89,5 +102,6 @@ a {
 }
 
 .projects-page {
-  margin-top: 100px;
+  padding-top: 250px;
+  min-height: 100vh;
 }
