@@ -63,7 +63,7 @@ a {
 }
 
 .logo-image {
-  width: 100px;
+  width: 60px;
 }
 
 .item {
@@ -84,6 +84,10 @@ a {
   opacity: 0.9;
   min-height: 50vh;
   min-width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 30px;
   a {
   }
   &:hover {
@@ -104,4 +108,7 @@ a {
 .projects-page {
   padding-top: 250px;
   min-height: 100vh;
+}
+.project-info {
+  margin-top: 100px;
 }

@@ -9,8 +9,10 @@ function Thumbnail(props) {
         <div className="project-image">
           <img src={props.image} alt="Project"/>
         </div>
-        <div className="project-title">{props.title}</div>
-        <div className="project-category">{props.category}</div>
+        <div className="project-info">
+          <div className="project-title">{props.title}</div>
+          <div className="project-category">{props.category}</div>
+        </div>
       </Link>
     </div>
   )
