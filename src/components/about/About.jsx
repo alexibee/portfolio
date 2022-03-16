@@ -1,4 +1,9 @@
 import React from "react"
+import './about.scss'
+import ME from '../../assets/me-about.jpg'
+import {FaAward} from 'react-icons/fa'
+import {FiUsers} from 'react-icons/fi'
+import {VscFolderLibrary} from 'react-icons/vsc'
 
 const About = () => {
   return (
@@ -44,3 +49,5 @@ const About = () => {
     </section>
   )
 }
+
+export default About;
