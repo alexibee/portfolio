@@ -1,8 +1,8 @@
 import React from 'react';
-import imgWheelp from './wheelp-nobg.svg';
-import imgSup from './Recurso 2.png';
-import Thumbnail from './Thumbnail.js'; // Import the Thumbnail component
-import './App.scss';
+import imgWheelp from '../../assets/wheelp-nobg.svg';
+import imgSup from '../../assets/Recurso 2.png';
+import Thumbnail from '../../Thumbnail.jsx'; // Import the Thumbnail component
+import '../../App.scss';
 
 function Projects(props) {
   return (

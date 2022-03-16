@@ -1,55 +1,17 @@
-$color: rgb(106,224,247);
-$light-color: rgb(206,233,237);
-$background-color: rgb(26, 27, 29);
+@import './index.scss';
 
 .App {
   text-align: center;
-  background-image: url('turq.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 a {
-  text-decoration: none;
-  color: $light-color;
+  color: $color-light;
   &:hover {
-    color: $color;
+    color: $cta-color;
   }
 }
 
@@ -58,7 +20,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: lighten($background-color, 10%);
+  background-color: $bg-color;
   opacity: 0.9;
 }
 
@@ -80,8 +42,7 @@ a {
 }
 
 .project {
-  background-color: lighten($background-color, 10%);
-  opacity: 0.9;
+  background-color: $bg-color-light;
   min-height: 50vh;
   min-width: 40vw;
   display: flex;
@@ -91,9 +52,8 @@ a {
   a {
   }
   &:hover {
-    opacity: 1;
-    background-color: lighten($background-color, 5%);
-    color: $color;
+    background-color: $bg-color-light;
+    color: $cta-color;
   }
 }
 
