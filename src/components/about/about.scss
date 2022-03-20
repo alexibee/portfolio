@@ -25,10 +25,9 @@
   overflow: hidden;
   transform: rotate(10deg);
   transition: $transition;
-}
-
-.about__me-image:hover {
-  transform: rotate(0);
+  &:hover {
+    transform: rotate(0);
+  }
 }
 
 .about__cards {
@@ -44,12 +43,11 @@
   padding: 2rem;
   text-align: center;
   transition: $transition;
-}
-
-.about__card:hover {
-  background: transparent;
-  border-color: $cta-color-variant;
-  cursor: default;
+  &:hover {
+    background: transparent;
+    border-color: $cta-color-variant;
+    cursor: default;
+  }
 }
 
 .about__icon {
