@@ -69,10 +69,9 @@ section > h2 {
 a {
   color: $cta-color;
   transition: $transition;
-}
-
-a:hover {
-  color: $white;
+  &:hover {
+    color: $white;
+  }
 }
 
 .btn {
@@ -84,12 +83,11 @@ a:hover {
   cursor: pointer;
   border: 1px solid $cta-color;
   transition: $transition;
-}
-
-.btn:hover {
-  background: $white;
-  color: $bg-color;
-  border-color: transparent;
+  &:hover {
+    background: $white;
+    color: $bg-color;
+    border-color: transparent;
+  }
 }
 
 .btn-primary {
