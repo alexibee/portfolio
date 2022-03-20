@@ -37,14 +37,14 @@
 }
 
 .about__card {
-  background: $color-bg-light;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) );
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
   transition: $transition;
   &:hover {
-    background: transparent;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) );
     border-color: $color-cta-variant;
     cursor: default;
   }
