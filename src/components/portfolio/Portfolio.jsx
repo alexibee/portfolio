@@ -4,22 +4,20 @@ import './portfolio.scss';
 import IMG1 from '../../assets/Recurso 2.png'
 import IMG2 from '../../assets/wheelp-nobg.svg'
 
-// DO NOT USE THE IMAGES IN PRODUCTION
-
 const data = [
   {
     id: 1,
     image: IMG1,
     title: 'Superpowerly',
     github: 'https://github.com/slvgonzalez/superpowerly',
-    demo: '',
+    demo: 'https://troopl.com/aleksejsbrehovs/superpowerly',
   },
   {
     id: 2,
     image: IMG2,
     title: 'Wheelp',
     github: 'https://github.com/alexibee/wheelp',
-    demo: '',
+    demo: 'https://troopl.com/aleksejsbrehovs/wheelp',
   }
 
 ]
@@ -42,7 +40,7 @@ const Portfolio = () => {
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
                 <a href={github} className='btn' target='_blank' rel="noreferrer">Github</a>
-                <a href={demo} className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
+                <a href={demo} className='btn btn-primary' target='_blank' rel="noreferrer">Demo</a>
               </div>
             </article>
             )

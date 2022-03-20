@@ -20,7 +20,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background: $bg-color;
+  background: $color-bg;
   color: $color-light;
   line-height: 1.7;
   background-image: url('./assets/surface.jpg');
@@ -58,8 +58,13 @@ section > h5 {
 }
 
 section > h2 {
-  color: $cta-color;
+  color: $color;
   margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+section > h5 {
+  font-size: 1rem;
 }
 
 .text-light {
@@ -67,7 +72,7 @@ section > h2 {
 }
 
 a {
-  color: $cta-color;
+  color: $color;
   transition: $transition;
   &:hover {
     color: $white;
@@ -77,22 +82,22 @@ a {
 .btn {
   width: max-content;
   display: inline-block;
-  color: $cta-color;
+  color: $color;
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid $cta-color;
+  border: 1px solid $color;
   transition: $transition;
   &:hover {
     background: $white;
-    color: $bg-color;
+    color: $color-bg;
     border-color: transparent;
   }
 }
 
 .btn-primary {
-  background: $cta-color;
-  color: $bg-color;
+  background: $color-cta;
+  color: $color-bg;
 }
 
 img {

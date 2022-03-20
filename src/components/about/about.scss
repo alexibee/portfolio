@@ -13,7 +13,7 @@
   background: linear-gradient(
     45deg,
     transparent,
-   $cta-color,
+   $color,
     transparent
   );
   display: grid;
@@ -37,7 +37,7 @@
 }
 
 .about__card {
-  background: $bg-color-light;
+  background: $color-bg-light;
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 2rem;
@@ -45,13 +45,13 @@
   transition: $transition;
   &:hover {
     background: transparent;
-    border-color: $cta-color-variant;
+    border-color: $color-cta-variant;
     cursor: default;
   }
 }
 
 .about__icon {
-  color:$cta-color;
+  color:$color-cta;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
