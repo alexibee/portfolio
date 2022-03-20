@@ -12,6 +12,9 @@
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: $transition;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   &:hover {
     border-color: $color-cta-variant;
     background: transparent;
@@ -20,7 +23,12 @@
 
 .portfolio__item-image {
   border-radius: 1.5rem;
+  flex-grow: 1;
   overflow: hidden;
+  display: flex;
+  img {
+    align-self: center;
+  }
 }
 
 .portfolio__item h3 {

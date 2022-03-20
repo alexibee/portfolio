@@ -19,15 +19,13 @@ nav a {
   padding: 0.9rem;
   border-radius: 50%;
   display: flex;
-  color: var(--color-light);
+  color: $color-light;
   font-size: 1.1rem;
-}
-
-nav a:hover {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-nav a.active {
-  background: $color;
-  color: var(--color-bg);
+  .active {
+    background: $color;
+    color: $color-bg;
+  }
+  &:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
 }
