@@ -3,7 +3,7 @@
 a {
   color: $color-light;
   &:hover {
-    color: $cta-color;
+    color: $color;
   }
 }
 
@@ -12,7 +12,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: $bg-color;
+  background-color: $color-bg;
   opacity: 0.9;
 }
 
@@ -34,18 +34,16 @@ a {
 }
 
 .project {
-  background-color: $bg-color-light;
+  background-color: $color-bg-light;
   min-height: 50vh;
   min-width: 40vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 30px;
-  a {
-  }
   &:hover {
-    background-color: $bg-color-light;
-    color: $cta-color;
+    background-color: $color-bg-light;
+    color: $color;
   }
 }
 

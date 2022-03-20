@@ -13,7 +13,7 @@
   background: linear-gradient(
     45deg,
     transparent,
-   $cta-color,
+   $color,
     transparent
   );
   display: grid;
@@ -25,45 +25,43 @@
   overflow: hidden;
   transform: rotate(10deg);
   transition: $transition;
-}
-
-.about__me-image:hover {
-  transform: rotate(0);
+  &:hover {
+    transform: rotate(0);
+  }
 }
 
 .about__cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
 .about__card {
-  background: $bg-color-light;
+  background: $color-bg-light;
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
   transition: $transition;
-}
-
-.about__card:hover {
-  background: transparent;
-  border-color: $cta-color-variant;
-  cursor: default;
+  &:hover {
+    background: transparent;
+    border-color: $color-cta-variant;
+    cursor: default;
+  }
 }
 
 .about__icon {
-  color:$cta-color;
-  font-size: 1.4rem;
+  color:$color-cta;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .about__card h5 {
-  font-size: 0.95rem;
+  font-size: 1.5rem;
 }
 
-.about__card small {
-  font-size: 0.7rem;
+.about__card p {
+  font-size: 1rem;
   color: $color-light;
 }
 
