@@ -7,7 +7,8 @@
 }
 
 .portfolio__item {
-  background: $color-bg-light;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) );
+  background-size: cover;
   padding: 1.2rem;
   border-radius: 2rem;
   border: 1px solid transparent;
@@ -17,18 +18,16 @@
   justify-content: space-around;
   &:hover {
     border-color: $color-cta-variant;
-    background: transparent;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) );
   }
-}
-
-.portfolio__item-image {
-  border-radius: 1.5rem;
-  flex-grow: 1;
-  overflow: hidden;
-  display: flex;
-  background: transparent;
-  img {
-    align-self: center;
+  .portfolio__item-image {
+    border-radius: 1.5rem;
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+    img {
+      align-self: center;
+    }
   }
 }
 
