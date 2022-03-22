@@ -40,16 +40,23 @@ header {
 
 /* =============== ME ============== */
 .me {
-  background: linear-gradient($color-bg, transparent);
+  width: 40px;
+  height: 40px;
+  background: green;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+  background: linear-gradient(black, transparent);
+  border-top: 50px solid black;
+  border-left: 20px solid black;
+  border-right: 20px solid black;
   width: 22rem;
-  height: 30rem;
+  height: 100%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   margin-top: 4rem;
-  border-radius: 12rem 12rem 0 0;
   overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  padding: 0rem 1rem 4rem 1rem;
 }
 
 /* =============== SCROLL DOWN ============== */
@@ -82,7 +89,6 @@ header {
     display: none;
   }
 
-  /* added after tutorial */
   .me {
     width: 94%;
     max-width: 20rem;
@@ -90,7 +96,6 @@ header {
     justify-content: center;
   }
 
-  /* added after tutorial */
   .cta {
     margin-top: 1.7rem;
     gap: 1rem;
