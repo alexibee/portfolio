@@ -40,32 +40,72 @@ header {
 
 /* =============== ME ============== */
 .me {
-  width: 40px;
-  height: 40px;
-  background: green;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
-  background: linear-gradient(black, transparent);
-  border-top: 50px solid black;
-  border-left: 20px solid black;
-  border-right: 20px solid black;
-  width: 22rem;
-  height: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) );
+  clip-path: polygon(100% 0%, 50% 50%, 0% 0%);
+  width: 14rem;
+  height: 45rem;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   margin-top: 4rem;
   overflow: hidden;
-  padding: 0rem 1rem 4rem 1rem;
+  padding: 0rem 0rem;
+}
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	// position: absolute;
+	// left: 50%;
+	// margin-left: -30px;
+	// bottom: 20px;
+}
+
+.arrows path {
+	stroke: $color;
+	fill: transparent;
+	stroke-width: 1px;
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
 
 /* =============== SCROLL DOWN ============== */
 .scroll__down {
   position: absolute;
-  right: -2.3rem;
-  bottom: 5rem;
+  right: 30%;
   transform: rotate(90deg);
-  font-weight: 300;
+  font-weight: 100;
   font-size: 0.9rem;
 }
 
@@ -80,7 +120,6 @@ header {
 @media screen and (max-width: 600px) {
   header {
     height: 100vh;
-    /* added after tutorial */
     padding-top: 4rem;
   }
 
