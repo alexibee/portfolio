@@ -70,6 +70,16 @@
   color: $color-light;
 }
 
+/* =============== SOCIALS ============== */
+.about__socials {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  gap: 1.2rem;
+}
+
+
+
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
   .about__container {
