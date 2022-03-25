@@ -6,28 +6,24 @@
   gap: 15%;
 }
 
-.about__me {
-  width: 100%;
-  aspect-ratio: 1/1;
-  border-radius: 2rem;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    $color-bg-light,
-    transparent
-  );
-  display: grid;
-  place-items: center;
-}
+// .about__me {
+//   width: 90%;
+//   // aspect-ratio: 1/1;
+//   border-radius: 2rem;
+//   // background: linear-gradient(
+//   //   45deg,
+//   //   transparent,
+//   //   $color-bg-light,
+//   //   transparent
+//   // );
+//   display: grid;
+//   // place-items: center;
+// }
 
 .about__me-image {
   border-radius: 2rem;
+  width: 100%;
   overflow: hidden;
-  transform: rotate(10deg);
-  transition: $transition;
-  &:hover {
-    transform: rotate(0);
-  }
 }
 
 .about__cards {
@@ -69,6 +65,16 @@
   margin: 2rem 0 2.6rem;
   color: $color-light;
 }
+
+/* =============== SOCIALS ============== */
+.about__socials {
+  display: flex;
+  justify-content: center;
+  font-size: 2.2rem;
+  gap: 3rem;
+}
+
+
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
