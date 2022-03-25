@@ -24,22 +24,22 @@ header {
 }
 
 /* =============== HEADER SOCIALS ============== */
-.header__socials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.8rem;
-  position: absolute;
-  left: 0;
-  bottom: 3rem;
-}
+// .header__socials {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 0.8rem;
+//   position: absolute;
+//   left: 0;
+//   bottom: 3rem;
+// }
 
-.header__socials::after {
-  content: "";
-  width: 1px;
-  height: 2rem;
-  background: $color;
-}
+// .header__socials::after {
+//   content: "";
+//   width: 1px;
+//   height: 2rem;
+//   background: $color;
+// }
 
 /* =============== ME ============== */
 .me {
@@ -52,7 +52,7 @@ header {
   transform: translateX(-50%);
   margin-top: 4rem;
   overflow: hidden;
-  padding: 0rem 0rem;
+  padding: 0rem;
 }
 
 .arrows {
@@ -104,18 +104,18 @@ header {
 }
 
 /* =============== SCROLL DOWN ============== */
-.scroll__down {
-  position: absolute;
-  right: 30%;
-  transform: rotate(90deg);
-  font-weight: 100;
-  font-size: 0.9rem;
-}
+// .scroll__down {
+//   position: absolute;
+//   right: 30%;
+//   transform: rotate(90deg);
+//   font-weight: 100;
+//   font-size: 0.9rem;
+// }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
   header {
-    height: 68vh;
+    height: 100vh;
   }
 }
 
@@ -124,11 +124,6 @@ header {
   header {
     height: 100vh;
     padding-top: 4rem;
-  }
-
-  .header__socials,
-  .scroll__down {
-    display: none;
   }
 
   .me {
