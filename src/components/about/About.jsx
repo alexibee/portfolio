@@ -3,6 +3,7 @@ import './about.scss'
 import ME from '../../assets/me.jpg'
 import {FaAward} from 'react-icons/fa'
 import {VscFolderLibrary} from 'react-icons/vsc'
+import Socials from './Socials'
 
 const About = () => {
   return (
@@ -15,6 +16,7 @@ const About = () => {
           <div className="about__me-image">
             <img src={ME} alt="About" />
           </div>
+          <Socials />
         </div>
 
         <div className="about__content">
@@ -32,7 +34,6 @@ const About = () => {
               <p>2 Projects and counting :) </p>
             </article>
           </div>
-
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos voluptatem eius dolorem maiores nihil ducimus at rem ullam reprehenderit quidem quia deserunt, molestiae, eligendi amet repellat molestias quos totam.
           </p>
