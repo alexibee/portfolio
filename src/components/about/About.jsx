@@ -16,6 +16,7 @@ const About = () => {
           <div className="about__me-image">
             <img src={ME} alt="About" />
           </div>
+          <Socials />
         </div>
 
         <div className="about__content">
@@ -38,7 +39,6 @@ const About = () => {
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
-          <Socials />
         </div>
       </div>
     </section>
