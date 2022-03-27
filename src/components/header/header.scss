@@ -34,7 +34,7 @@ header {
   transform: translateX(-50%);
   margin-top: 4rem;
   overflow: hidden;
-  padding: 0rem 0rem;
+  padding: 0rem;
 }
 
 .arrows {
@@ -86,18 +86,18 @@ header {
 }
 
 /* =============== SCROLL DOWN ============== */
-.scroll__down {
-  position: absolute;
-  right: 30%;
-  transform: rotate(90deg);
-  font-weight: 100;
-  font-size: 0.9rem;
-}
+// .scroll__down {
+//   position: absolute;
+//   right: 30%;
+//   transform: rotate(90deg);
+//   font-weight: 100;
+//   font-size: 0.9rem;
+// }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
   header {
-    height: 68vh;
+    height: 100vh;
   }
 }
 
@@ -108,17 +108,12 @@ header {
     padding-top: 4rem;
   }
 
-  .header__socials,
-  .scroll__down {
-    display: none;
-  }
-
-  .me {
-    width: 94%;
-    max-width: 20rem;
-    margin-top: 2.5rem;
-    justify-content: center;
-  }
+  // .me {
+  //   width: 94%;
+  //   max-width: 20rem;
+  //   margin-top: 2.5rem;
+  //   justify-content: center;
+  // }
 
   .cta {
     margin-top: 1.7rem;
