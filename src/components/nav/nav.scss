@@ -7,11 +7,11 @@ nav {
   padding: 0.7rem 1.7rem;
   z-index: 2;
   position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 2rem;
+  right: -5%;
+  top: 45%;
+  transform: rotate(90deg);
   display: flex;
-  gap: 0.8rem;
+  gap: 1.5rem;
   border-radius: 3rem;
   backdrop-filter: blur(15px);
 }
@@ -20,14 +20,43 @@ nav a {
   background: transparent;
   padding: 0.9rem;
   border-radius: 50%;
+  transform: rotate(270deg);
   display: flex;
   color: $color-light;
   font-size: 1.1rem;
-  .active {
-    background: $color;
-    color: $color-bg;
-  }
   &:hover {
     background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.active {
+  background: darken($color,10%);
+  color: $color-bg;
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+  nav {
+    right: -8%;
+    padding: 0.5rem 1.4rem;
+    a {
+      font-size: 1rem;
+    }
+  }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+  nav {
+    transform: none;
+    gap: 1.5rem;
+    border-radius: 3rem;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    a {
+      transform: none;
+    }
   }
 }
