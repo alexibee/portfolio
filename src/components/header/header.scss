@@ -25,9 +25,9 @@ header {
 
 /* =============== ME ============== */
 .me {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) );
+  background: $color-gradient;
   clip-path: polygon(100% 0%, 50% 50%, 0% 0%);
-  width: 14rem;
+  width: 20rem;
   height: 45rem;
   position: absolute;
   left: 50%;
@@ -35,6 +35,10 @@ header {
   margin-top: 4rem;
   overflow: hidden;
   padding: 0rem;
+  img {
+    padding: 1rem 3rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .arrows {

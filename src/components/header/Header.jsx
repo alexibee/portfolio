@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.scss'
 import CTA from './CTA'
-import ME from '../../assets/me.jpg'
+import LOGO from '../../assets/logo.svg'
 
 const Header = () => {
   return (
@@ -12,7 +12,7 @@ const Header = () => {
         <h5 className="text-light">Full-Stack Developer</h5>
         <CTA />
         <div className="me">
-          <img src={ME} alt="me" />
+          <img src={LOGO} alt="logo" />
           <a href="#contact">
             <svg class="arrows">
                 <path class="a1" d="M0 0 L30 32 L60 0"></path>
