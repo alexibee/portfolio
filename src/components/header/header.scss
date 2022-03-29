@@ -25,24 +25,28 @@ header {
 
 /* =============== ME ============== */
 .me {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) );
+  background: $color-gradient;
   clip-path: polygon(100% 0%, 50% 50%, 0% 0%);
-  width: 14rem;
-  height: 45rem;
+  width: 20rem;
+  height: 48rem;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   margin-top: 4rem;
   overflow: hidden;
   padding: 0rem;
+  img {
+    padding: 2rem 3rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .arrows {
 	width: 60px;
 	height: 72px;
-	// position: absolute;
-	// left: 50%;
-	// margin-left: -30px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
 	// bottom: 20px;
 }
 

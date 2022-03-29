@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import '../../index.scss';
 
 nav {
   background: rgba(0, 0, 0, 0.3);
@@ -12,6 +12,7 @@ nav {
   transform: rotate(90deg);
   display: flex;
   gap: 1.5rem;
+  border: 1px solid $color-bg-light;
   border-radius: 3rem;
   backdrop-filter: blur(15px);
 }
