@@ -15,7 +15,7 @@
 }
 
 .experience__container > div:hover {
-  background: transparent;
+  background: $color-gradient-light;
   border-color: $color-cta-variant;
   cursor: default;
 }

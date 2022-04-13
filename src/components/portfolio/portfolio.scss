@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import '../../index.scss';
 
 .portfolio__container {
   display: grid;
@@ -7,7 +7,7 @@
 }
 
 .portfolio__item {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) );
+  background: $color-gradient;
   background-size: cover;
   padding: 1.2rem;
   border-radius: 2rem;
@@ -18,7 +18,7 @@
   justify-content: space-around;
   &:hover {
     border-color: $color-cta-variant;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) );
+    background: $color-gradient-light;
   }
   .portfolio__item-image {
     border-radius: 1.5rem;
