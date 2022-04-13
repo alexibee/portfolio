@@ -41,7 +41,7 @@
   transition: $transition;
   &:hover {
     background: $color-gradient-light;
-    border-color: $color-cta-variant;
+    border-color: $color-cta;
     cursor: default;
   }
 }

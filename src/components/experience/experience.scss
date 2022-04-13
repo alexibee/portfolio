@@ -2,13 +2,13 @@
 
 .experience__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
 }
 
 .experience__container > div {
   background: $color-gradient;
-  padding: 3rem 5rem;
+  padding: 3rem 14rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: $transition;
@@ -16,7 +16,7 @@
 
 .experience__container > div:hover {
   background: $color-gradient-light;
-  border-color: $color-cta-variant;
+  border-color: $color-cta;
   cursor: default;
 }
 
@@ -29,8 +29,8 @@
 .experience__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 1rem;
-  column-gap: 5rem;
+  row-gap: 2rem;
+  column-gap: 23rem;
 }
 
 .experience__details {

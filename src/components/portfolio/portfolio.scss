@@ -2,7 +2,7 @@
 
 .portfolio__container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
 }
 
@@ -17,7 +17,7 @@
   flex-direction: column;
   justify-content: space-around;
   &:hover {
-    border-color: $color-cta-variant;
+    border-color: $color-cta;
     background: $color-gradient-light;
   }
   .portfolio__item-image {
