@@ -12,10 +12,10 @@
   flex-direction: column;
   align-items: center;
   background: $color-gradient;
-  padding: 3rem 4rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: $transition;
+  margin-bottom: 2rem;
 }
 
 .experience__container > div:hover {
@@ -26,7 +26,7 @@
 
 .experience__container > div h3 {
   text-align: center;
-  margin-bottom: 4rem;
+  margin: 2rem 0;
   color: $color-cta;
 }
 
@@ -36,6 +36,7 @@
   justify-content: center;
   row-gap: 2rem;
   column-gap: 14rem;
+  padding: 3rem 0;
 }
 
 .experience__details {
@@ -51,7 +52,7 @@
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
   .experience__container {
-    padding: 0 1rem;
+    grid-template-columns: 1fr;
   }
 
   .experience__content {
@@ -63,7 +64,7 @@
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
   .experience__container {
-    gap: 1rem;
+    grid-template-columns: 1fr;
   }
 
   .experience__content {

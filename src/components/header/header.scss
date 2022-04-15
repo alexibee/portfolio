@@ -1,18 +1,17 @@
-@import '../../variables.scss';
+@import '../../index.scss';
 
 header {
   // height: 100vh;
   padding-top: 5rem;
-  // overflow: hidden;
+  overflow: hidden;
   h5 {
   font-size: 1rem;
   }
 }
 
 .header__container {
+  height: 100%;
   text-align: center;
-  // height: 100%;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -30,32 +29,40 @@ header {
 /* =============== ME ============== */
 .me {
   background: $color-gradient;
-  clip-path: polygon(100% 0%, 50% 50%, 0% 0%);
+  clip-path: polygon(100% 0%, 50% 100%, 0% 0%);
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  // justify-content: center;
-  align-items: center;
-  width: 20rem;
-  height: 90rem;
+  width: 16rem;
+  height: 20rem;
+  // height: 40rem;
   // left: 50%;
   // transform: translateX(-50%);
   margin-top: 4rem;
   // overflow: hidden;
   // padding: 0rem;
-  a {
-    contain: content;
-  }
+}
+
+.me__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.me__inner-logo {
+  margin-top: 2rem;
   img {
-    border: 1px solid $color;
-    padding: 2rem 4rem;
-    margin-bottom: 4rem;
+    width: 8rem;
   }
+}
+
+.me__inner-link {
+  padding: 5rem 0 4rem 0;
 }
 
 .arrows {
 	width: 60px;
-	// height: 72px;
+  // margin-bottom: 4rem;
+	height: 72px;
 
 	// left: 50%;
 	// margin-left: -30px;
@@ -112,15 +119,11 @@ header {
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
-  header {
-    height: 100vh;
-  }
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
     padding-top: 4rem;
   }
 
