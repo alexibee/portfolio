@@ -35,7 +35,12 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos voluptatem eius dolorem maiores nihil ducimus at rem ullam reprehenderit quidem quia deserunt, molestiae, eligendi amet repellat molestias quos totam.
+          After building some simple tools in VBA for Excel in my previous role, I discovered
+          a passion for coding, quit my job, and completed a web development course at Le
+          Wagon with a goal to change my life and pursue a career in tech.
+          I am skilled in communication, team/project management, able to efficiently work
+          both as a part of the team and independently, thriving when working to tight
+          deadlines. Multi-lingual - fluent in English, Russian, Latvian, proficient in Finnish.
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
