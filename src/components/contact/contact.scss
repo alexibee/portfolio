@@ -1,0 +1,69 @@
+@import '../../index.scss';
+
+.container.contact__container {
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+  padding-top: 2rem;
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact__option {
+  background: $color-gradient;
+  padding: 1.2rem;
+  border: 1px solid transparent;
+  border-radius: 1.2rem;
+  text-align: center;
+  transition: $transition;
+  &:hover {
+    background: $color-gradient-light;
+    border-color: $color-cta;
+  }
+  a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.7rem;
+  }
+}
+
+.contact__option-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: $color-gradient-light;
+  border: 1px solid $color-cta;
+  resize: none;
+  color: $color-light;
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+  .container.contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+  .container.contact__container {
+    width: $container-width-sm;
+  }
+}

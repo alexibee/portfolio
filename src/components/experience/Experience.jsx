@@ -9,9 +9,9 @@ const Experience = () => {
       <h2>My Skills</h2>
       <div className="container experience__container">
 
-        <div className="experience__frontend">
+        <div className="experience__development">
 
-          <h3>Frontend Development</h3>
+          <h3>Software/Web Development</h3>
           <div className="experience__content">
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon"/>
@@ -33,13 +33,6 @@ const Experience = () => {
               <BsPatchCheckFill className="experience__details-icon"/>
               <h4>React</h4>
             </article>
-          </div>
-        </div>
-
-        <div className="experience__backend">
-
-          <h3>Backend Development</h3>
-          <div className="experience__content">
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon"/>
               <h4>Ruby on Rails</h4>
