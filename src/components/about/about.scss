@@ -40,8 +40,8 @@
   text-align: center;
   transition: $transition;
   &:hover {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) );
-    border-color: $color-cta-variant;
+    background: $color-gradient-light;
+    border-color: $color-cta;
     cursor: default;
   }
 }
