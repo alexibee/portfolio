@@ -7,10 +7,12 @@ const Header = () => {
   return (
     <header>
       <div className='container header__container'>
-        <h5> Hey, I am </h5>
-        <h1>Alexi Brehovs</h1>
-        <h5 className="text-light">Full-Stack Developer</h5>
-        <CTA />
+        <div>
+          <h5> Hey, I am </h5>
+          <h1>Alexi Brehovs</h1>
+          <h5 className="text-light">Full-Stack Developer</h5>
+          <CTA />
+        </div>
         <div className="me">
           <img src={LOGO} alt="logo" />
           <a href="#contact">
