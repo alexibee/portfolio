@@ -2,7 +2,7 @@ import React from 'react'
 import './contact.scss'
 import {MdOutlineEmail} from 'react-icons/md'
 import { useRef } from 'react';
-// import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
   const form = useRef();
