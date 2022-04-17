@@ -10,7 +10,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // emailjs.sendForm('service_3fjfb17', 'template_ky1ucaz', form.current, 'user_641J0AWGxx4qcKi835yDq')
+    emailjs.sendForm('service_bn9xe6q', 'template_8zi9ken', form.current, 'WdUY_-7e1qFALD56s')
 
     e.target.reset()
   };
@@ -29,7 +29,7 @@ const Contact = () => {
             <a href="mailto:aleksejs.brehovs@gmail.com" target="_blank" rel="noreferrer">Send a message</a>
           </article>
         </div>
-        {/* END OF CONTACT OPTIONS */}
+
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Your Full Name' required />
           <input type="email" name='email' placeholder='Your Email' required />
