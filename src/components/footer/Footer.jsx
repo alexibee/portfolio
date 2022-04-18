@@ -1,17 +1,17 @@
 import React from 'react'
 import './footer.scss'
 import LOGO from '../../assets/logo.svg'
-import {FaFacebookF} from 'react-icons/fa'
-import {FiInstagram} from 'react-icons/fi'
-import {IoLogoTwitter} from 'react-icons/io'
+import {FiGithub} from 'react-icons/fi'
+import {FaLinkedinIn} from 'react-icons/fa'
+import {SiCodewars} from 'react-icons/si'
 
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'><img src={LOGO}/></a>
+      <a href="#header" className='footer__logo'><img src={LOGO} alt='logo'/></a>
 
       <ul className='permalinks'>
-        <li><a href="#">Home</a></li>
+        <li><a href="#header">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
@@ -19,9 +19,9 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://facebook.com"><FaFacebookF/></a>
-        <a href="https://instagram.com"><FiInstagram/></a>
-        <a href="https://twitter.com"><IoLogoTwitter/></a>
+        <a href="https://github.com/alexibee" target='_blank' rel='noreferrer'><FiGithub/></a>
+        <a href="https://www.linkedin.com/in/alexi-brehovs/" target='_blank' rel='noreferrer'><FaLinkedinIn/></a>
+        <a href="https://www.codewars.com/users/alexibee"><SiCodewars/></a>
       </div>
 
       <div className="footer__copyright">
