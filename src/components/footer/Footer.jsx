@@ -1,8 +1,9 @@
 import React from 'react'
 import './footer.scss'
 import LOGO from '../../assets/logo.svg'
-import {FaFacebookF} from 'react-icons/fa'
+import {FiGithub} from 'react-icons/fi'
 import {FiInstagram} from 'react-icons/fi'
+import {FaLinkedinIn} from 'react-icons/fa'
 import {IoLogoTwitter} from 'react-icons/io'
 
 const Footer = () => {
@@ -19,8 +20,8 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://facebook.com"><FaFacebookF/></a>
-        <a href="https://instagram.com"><FiInstagram/></a>
+        <a href="https://github.com/alexibee" target='_blank' rel='noreferrer'><FiGithub/></a>
+        <a href="https://www.linkedin.com/in/alexi-brehovs/" target='_blank' rel='noreferrer'><FaLinkedinIn/></a>
         <a href="https://twitter.com"><IoLogoTwitter/></a>
       </div>
 

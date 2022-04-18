@@ -41,12 +41,11 @@ footer a {
   border-radius: 0.7rem;
   display: flex;
   border: 1px solid transparent;
-}
-
-.footer__socials a:hover {
-  background: transparent;
-  color: $color-bg;
-  border-color: $color-bg;
+  &:hover {
+    background: transparent;
+    color: $color-cta-variant;
+    border-color: $color-bg;
+  }
 }
 
 .footer__copyright {
