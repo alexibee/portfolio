@@ -36,7 +36,7 @@
   background: $color-gradient;
   border: 1px solid transparent;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 2rem 2rem 1rem 2rem;
   text-align: center;
   transition: $transition;
   &:hover {
@@ -85,7 +85,7 @@
 
   .about__me {
     width: 50%;
-    margin: 2rem auto 4rem;
+    margin: 1rem auto 2rem;
   }
 
   .about__content p {

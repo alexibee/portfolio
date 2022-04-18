@@ -26,8 +26,9 @@ body {
   line-height: 1.7;
   background-image: url('./assets/surface.jpg');
   background-size: contain;
-  background-blend-mode:color-dodge;
+  background-blend-mode: color-dodge;
   background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 /* =========== general styles ============ */

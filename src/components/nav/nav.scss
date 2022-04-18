@@ -1,6 +1,6 @@
 @import '../../index.scss';
 
-nav {
+nav ul{
   background: rgba(0, 0, 0, 0.3);
   width: max-content;
   display: block;
@@ -17,7 +17,7 @@ nav {
   backdrop-filter: blur(15px);
 }
 
-nav a {
+.navlink {
   background: transparent;
   padding: 0.9rem;
   border-radius: 50%;
@@ -37,10 +37,10 @@ nav a {
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
-  nav {
+  nav ul{
     right: -13%;
     padding: 0.5rem 0.5rem;
-    a {
+    .navlink {
       font-size: 1rem;
     }
   }
@@ -49,23 +49,23 @@ nav a {
 
 /* ================ MEDIA QUERIES (SMALL/MEDIUM DEVICES) ================= */
 @media screen and (max-width: 800px) {
-  nav {
+  nav ul{
     right: -17%;
   }
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
-  nav {
+  nav ul{
     transform: none;
     gap: 1.5rem;
     border-radius: 3rem;
     top: auto;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 2rem;
+    bottom: 1rem;
     padding: 0.5rem 1rem;
-    a {
+    .navlink {
       transform: none;
     }
   }
