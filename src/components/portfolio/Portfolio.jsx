@@ -1,13 +1,10 @@
 import React from 'react';
 import './portfolio.scss';
 
-import IMG1 from '../../assets/Recurso 2.png'
-import IMG2 from '../../assets/wheelp-nobg.svg'
-
 const data = [
   {
     id: 1,
-    image: IMG1,
+    image: 'https://res.cloudinary.com/dhoecmw9w/image/upload/v1650379451/production/Recurso_2_qapsbe.png',
     title: 'Superpowerly',
     deployed: 'https://superpowerly.herokuapp.com/',
     github: 'https://github.com/slvgonzalez/superpowerly',
@@ -15,7 +12,7 @@ const data = [
   },
   {
     id: 2,
-    image: IMG2,
+    image: 'https://res.cloudinary.com/dhoecmw9w/image/upload/v1650379451/production/wheelp-nobg_jrkk0o.svg',
     title: 'Wheelp',
     deployed: 'http://www.wheelp.me/',
     github: 'https://github.com/alexibee/wheelp',

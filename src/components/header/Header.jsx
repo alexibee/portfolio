@@ -1,7 +1,6 @@
 import React from 'react'
 import './header.scss'
 import CTA from './CTA'
-import LOGO from '../../assets/logo.svg'
 
 const Header = () => {
   return (
@@ -16,7 +15,7 @@ const Header = () => {
         <div className="me">
           <div className="me__inner">
             <div className="me__inner-logo">
-              <img src={LOGO} alt="logo" />
+              <img src='https://res.cloudinary.com/dhoecmw9w/image/upload/v1650377125/production/logo_wokwt2.svg' alt="logo" />
             </div>
             <div className="me__inner-link">
               <a href="#about">

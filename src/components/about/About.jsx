@@ -1,11 +1,11 @@
 import React from "react"
 import './about.scss'
-import ME from '../../assets/me.jpg'
 import {FaAward} from 'react-icons/fa'
 import {VscFolderLibrary} from 'react-icons/vsc'
 import Socials from './Socials'
 
 const About = () => {
+
   return (
     <section id='about'>
       <h5>Get To Know</h5>
@@ -14,7 +14,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="About" />
+            <img src='https://res.cloudinary.com/dhoecmw9w/image/upload/v1650377128/production/me_ysy0ww.jpg' alt="About" />
           </div>
           <Socials />
         </div>

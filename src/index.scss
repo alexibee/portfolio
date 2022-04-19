@@ -21,15 +21,28 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: $color-bg;
   color: $color-light;
   line-height: 1.7;
-  background-image: url('./assets/surface.jpg');
-  background-size: contain;
+}
+
+body:after{
+  content:"";
+  position:fixed;
+  top:0;
+  height:100vh;
+  left:0;
+  right:0;
+  z-index:-1;
+  background: url('https://res.cloudinary.com/dhoecmw9w/image/upload/v1650377128/production/surface_zogafn.jpg') center center;
+  background-color: $color-bg;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-blend-mode: color-dodge;
   background-repeat: repeat;
-  background-attachment: fixed;
 }
+
 
 /* =========== general styles ============ */
 .container {
