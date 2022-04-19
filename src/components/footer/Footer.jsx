@@ -1,6 +1,5 @@
 import React from 'react'
 import './footer.scss'
-import LOGO from '../../assets/logo.svg'
 import {FiGithub} from 'react-icons/fi'
 import {FaLinkedinIn} from 'react-icons/fa'
 import {SiCodewars} from 'react-icons/si'
@@ -8,7 +7,7 @@ import {SiCodewars} from 'react-icons/si'
 const Footer = () => {
   return (
     <footer>
-      <a href="#header" className='footer__logo'><img src={LOGO} alt='logo'/></a>
+      <a href="#header" className='footer__logo'><img src='https://res.cloudinary.com/dhoecmw9w/image/upload/v1650377125/production/logo_wokwt2.svg' alt='logo'/></a>
 
       <ul className='permalinks'>
         <li><a href="#header">Home</a></li>
