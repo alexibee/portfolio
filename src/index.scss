@@ -22,6 +22,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   color: $color-light;
+  background-color: $color-bg;
   line-height: 1.7;
 }
 
@@ -35,10 +36,10 @@ body:after{
   z-index:-1;
   background: url('https://res.cloudinary.com/dhoecmw9w/image/upload/v1650377128/production/surface_zogafn.jpg') center center;
   background-color: $color-bg;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
   background-blend-mode: color-dodge;
   background-repeat: repeat;
 }
