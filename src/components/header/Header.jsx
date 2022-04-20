@@ -15,7 +15,7 @@ const Header = () => {
         <div className="me">
           <div className="me__inner">
             <div className="me__inner-logo">
-              <img src='https://res.cloudinary.com/dhoecmw9w/image/upload/v1650377125/production/logo_wokwt2.svg' alt="logo" />
+              <img src='https://res.cloudinary.com/dhoecmw9w/image/upload/v1650382490/production/logo_ab_tyzadd.svg' alt="logo" />
             </div>
             <div className="me__inner-link">
               <a href="#about">
