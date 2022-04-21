@@ -12,9 +12,9 @@ const Nav = () => {
   return (
     <nav>
       <Scrollspy
-        items={ ['header', 'about', 'experience', 'portfolio', 'contact'] }
+        items={ ['home', 'about', 'experience', 'portfolio', 'contact'] }
         currentClassName="active" >
-          <a className="navlink" href="#header"><AiOutlineHome/></a>
+          <a className="navlink" href="#home"><AiOutlineHome/></a>
           <a className="navlink" href="#about"><AiOutlineUser/></a>
           <a className="navlink" href="#experience" ><AiOutlineRead/></a>
           <a className="navlink" href="#portfolio" ><AiOutlineFolderOpen/></a>

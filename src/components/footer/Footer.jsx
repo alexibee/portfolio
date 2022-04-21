@@ -7,10 +7,10 @@ import {SiCodewars} from 'react-icons/si'
 const Footer = () => {
   return (
     <footer>
-      <a href="#header" className='footer__logo'><img src='https://res.cloudinary.com/dhoecmw9w/image/upload/v1650382490/production/logo_ab_tyzadd.svg' alt='logo'/></a>
+      <a href="#home" className='footer__logo'><img src='https://res.cloudinary.com/dhoecmw9w/image/upload/v1650382490/production/logo_ab_tyzadd.svg' alt='logo'/></a>
 
       <ul className='permalinks'>
-        <li><a href="#header">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
