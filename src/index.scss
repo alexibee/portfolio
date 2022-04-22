@@ -22,7 +22,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   color: $color-light;
-  // background-color: $color-bg;
+  background-color: $color-bg;
   line-height: 1.7;
 }
 
@@ -36,21 +36,9 @@ body:after{
   z-index:-1;
   background: url('https://res.cloudinary.com/dhoecmw9w/image/upload/v1650377128/production/surface_zogafn.jpg') center center;
   background-color: $color-bg;
-  -webkit-background-color: $color-bg;
-  -moz-background-color: $color-bg;
-  -o-background-color: $color-bg;
-  -webkit-background-blend-mode: color-dodge;
-  -moz-background-blend-mode: color-dodge;
-  -o-background-blend-mode: color-dodge;
-  -webkit-background-repeat: repeat;
-  -moz-background-repeat: repeat;
-  -o-background-repeat: repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
-  background-blend-mode: color-dodge;
   background-repeat: repeat;
+  background-blend-mode: color-dodge;
 }
 
 
