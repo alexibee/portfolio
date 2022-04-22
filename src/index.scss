@@ -23,31 +23,28 @@ body {
   font-family: 'Roboto', sans-serif;
   color: $color-light;
   line-height: 1.7;
-  background: url('https://res.cloudinary.com/dhoecmw9w/image/upload/v1650377128/production/surface_zogafn.jpg') center;
-  background-color: $color-bg;
-  background-size: contain;
-  background-attachment: fixed;
-  // -webkit-background-repeat: repeat;
-  // -moz-background-repeat: repeat;
-  // -o-background-repeat: repeat;
-  // -webkit-background-size: contain;
-  // -moz-background-size: contain;
-  // -o-background-size: contain;
-  background-repeat: repeat;
-  background-blend-mode: color-dodge;
-
 }
 
-// body:after{
-//   content:"";
-//   position:fixed;
-//   top:0;
-//   height:100vh;
-//   left:0;
-//   right:0;
-//   z-index:-1;
-
-// }
+body:after{
+  content:"";
+  position:fixed;
+  top:0;
+  height:100vh;
+  left:0;
+  right:0;
+  z-index:-1;
+  background: url('https://res.cloudinary.com/dhoecmw9w/image/upload/v1650377128/production/surface_zogafn.jpg') center;
+  background-color: $color-bg;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  -webkit-background-repeat: repeat;
+  -moz-background-repeat: repeat;
+  -o-background-repeat: repeat;
+  background-repeat: repeat;
+  background-blend-mode: color-dodge;
+}
 
 
 /* =========== general styles ============ */
