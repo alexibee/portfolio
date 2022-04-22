@@ -36,6 +36,15 @@ body:after{
   z-index:-1;
   background: url('https://res.cloudinary.com/dhoecmw9w/image/upload/v1650377128/production/surface_zogafn.jpg') center center;
   background-color: $color-bg;
+  -webkit-background-color: $color-bg;
+  -moz-background-color: $color-bg;
+  -o-background-color: $color-bg;
+  -webkit-background-repeat: repeat;
+  -moz-background-repeat: repeat;
+  -o-background-repeat: repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
   background-size: contain;
   background-repeat: repeat;
   background-blend-mode: color-dodge;
