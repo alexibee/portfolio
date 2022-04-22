@@ -35,13 +35,7 @@ body:after{
   z-index:-1;
   background: url('https://res.cloudinary.com/dhoecmw9w/image/upload/v1650377128/production/surface_zogafn.jpg') center center;
   background-color: $color-bg;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-background-repeat: repeat;
-  -moz-background-repeat: repeat;
-  -o-background-repeat: repeat;
+  background-size: contain;
   background-repeat: repeat;
   background-blend-mode: color-dodge;
 }
@@ -141,6 +135,10 @@ img {
 @media screen and (max-width: 600px) {
   .container {
     width: $container-width-sm;
+  }
+
+  body:after{
+    background-size: cover;
   }
 
   section > h2 {
