@@ -33,12 +33,12 @@ body:after{
   left:0;
   right:0;
   z-index:-1;
-  background: url('https://res.cloudinary.com/dhoecmw9w/image/upload/v1650377128/production/surface_zogafn.jpg') center;
+  background: url('https://res.cloudinary.com/dhoecmw9w/image/upload/v1650377128/production/surface_zogafn.jpg') center center;
   background-color: $color-bg;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   -webkit-background-repeat: repeat;
   -moz-background-repeat: repeat;
   -o-background-repeat: repeat;
