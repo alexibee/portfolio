@@ -126,6 +126,10 @@ img {
     width: $container-width-md;
   }
 
+  body:after{
+    background-size: cover;
+  }
+
   section {
     margin-top: 6rem;
   }
@@ -135,10 +139,6 @@ img {
 @media screen and (max-width: 600px) {
   .container {
     width: $container-width-sm;
-  }
-
-  body:after{
-    background-size: cover;
   }
 
   section > h2 {
