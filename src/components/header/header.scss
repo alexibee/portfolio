@@ -1,8 +1,8 @@
 @import '../../index.scss';
 
 header {
-  //height: 100vh;
-  padding-top: 4rem;
+  min-height: 100vh;
+  padding-top: 5rem;
   overflow: hidden;
   h5 {
   font-size: 1rem;
@@ -10,6 +10,7 @@ header {
 }
 
 .header__container {
+  height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -30,14 +31,9 @@ header {
   background: $color-gradient;
   clip-path: polygon(100% 0%, 50% 100%, 0% 0%);
   flex-grow: 1;
-  width: 16rem;
-  height: 20rem;
-  // height: 40rem;
-  // left: 50%;
-  // transform: translateX(-50%);
-  margin-top: 4rem;
-  // overflow: hidden;
-  // padding: 0rem;
+  width: 18rem;
+  height: 24rem;
+  margin-top: 5rem;
 }
 
 .me__inner {
@@ -107,32 +103,62 @@ header {
 	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
 
-/* =============== SCROLL DOWN ============== */
-// .scroll__down {
-//   position: absolute;
-//   right: 30%;
-//   transform: rotate(90deg);
-//   font-weight: 100;
-//   font-size: 0.9rem;
-// }
-
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1024px) and (min-height:900px) {
+  .me {
+    height: 32rem;
+    margin-top: 6rem
+  }
+  .me__inner-link {
+    padding: 6rem 0 4rem 0;
+  }
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 600px) and (max-height: 1200px) {
   header {
-    padding-top: 3rem;
+    padding-top: 4rem;
   }
 
-  // .me {
-  //   width: 94%;
-  //   max-width: 20rem;
-  //   margin-top: 2.5rem;
-  //   justify-content: center;
-  // }
+  .me {
+  width: 14rem;
+  height: 21rem;
+  margin-top: 4rem;
+  }
 
+  .me__inner-link {
+    padding: 4rem 0 4rem 0;
+  }
+
+  .me__inner-logo {
+    img {
+      width: 6rem;
+    }
+  }
+  .cta {
+    margin-top: 1.7rem;
+    gap: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 600px) and (max-height: 700px) {
+  header {
+    padding-top: 2rem;
+  }
+
+  .me {
+  width: 14rem;
+  height: 18rem;
+  margin-top: 2.5rem;
+  }
+  .me__inner-logo {
+    img {
+      width: 5rem;
+    }
+  }
   .cta {
     margin-top: 1.7rem;
     gap: 1rem;
