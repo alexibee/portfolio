@@ -15,23 +15,19 @@ const Experience = () => {
           <div className="experience__content">
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon"/>
-              <h4>HTML</h4>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon"/>
-              <h4>CSS</h4>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon"/>
               <h4>JavaScript</h4>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon"/>
-              <h4>Bootstrap</h4>
+              <h4>TypeScript</h4>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon"/>
               <h4>React</h4>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon"/>
+              <h4>PHP/Laravel</h4>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon"/>
@@ -43,11 +39,7 @@ const Experience = () => {
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon"/>
-              <h4>PostgreSQL</h4>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon"/>
-              <h4>Node JS</h4>
+              <h4>PostgreSQL, MySQL </h4>
             </article>
           </div>
         </div>
