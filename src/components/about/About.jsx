@@ -35,12 +35,8 @@ const About = () => {
             </article>
           </div>
           <p>
-          After building some simple tools in VBA for Excel in my previous role, I discovered
-          a passion for coding, quit my job, and completed a web development course at Le
-          Wagon with a goal to change my life and pursue a career in tech.
-          I am skilled in communication, team/project management, able to efficiently work
-          both as a part of the team and independently, thriving when working to tight
-          deadlines. Multi-lingual - fluent in English, Russian, Latvian, proficient in Finnish.
+          Junior Full Stack Developer with professional experience working for a busy fintech start-up, participating in challenging
+          projects both as part of the team and independently, delivering value under tight deadlines.
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
