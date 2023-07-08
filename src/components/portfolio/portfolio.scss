@@ -2,40 +2,39 @@
 
 .portfolio__container {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 1fr;
 	gap: 6rem;
 }
 
-.portfolio__item {
-	background: $color-gradient;
-	background-size: cover;
-	padding: 1.2rem;
+.carousel {
 	border-radius: 2rem;
-	border: 1px solid transparent;
+}
+
+.portfolio__item {
+	border-radius: 2rem;
+	border: 1px solid $color-light;
 	transition: $transition;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	&:hover {
-		border-color: $color-cta;
-		background: $color-gradient-light;
-	}
+
 	.portfolio__item-image {
-		height: 250px;
+		height: 40vh;
 		border-radius: 1.5rem;
-		border: 1px solid transparent;
-		flex-grow: 1;
 		overflow: hidden;
 		display: flex;
 		transition: $transition;
-		&:hover {
-			border-color: $color-cta;
-			background: $color-gradient;
-		}
 		img {
 			align-self: center;
 		}
 	}
+}
+
+.portfolio__item-description {
+	margin: 2.2rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .portfolio__item h3 {
@@ -45,13 +44,13 @@
 .portfolio__item-cta {
 	display: flex;
 	gap: 1rem;
-	margin-bottom: 1rem;
+	margin: 1rem 0;
 }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
 	.portfolio__container {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 		gap: 1.2rem;
 	}
 	.portfolio__item-image {

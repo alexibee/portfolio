@@ -1,51 +1,52 @@
 @import './variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  border: 0;
-  outline: 0;
-  box-sizing: border-box;
-  list-style: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	border: 0;
+	outline: 0;
+	box-sizing: border-box;
+	list-style: none;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: $color-light;
-  background-color: $color-bg;
-  line-height: 1.7;
+	font-family: 'Lato', sans-serif;
+	color: $color;
+	background-color: $color-bg;
+	line-height: 1.7;
+	font-weight: 400;
 }
 
-body:after{
-  content:"";
-  position:fixed;
-  top:0;
-  height:100vh;
-  left:0;
-  right:0;
-  z-index:-1;
-  background: url('https://res.cloudinary.com/dhoecmw9w/image/upload/v1650377128/production/surface_zogafn.jpg') center center;
-  background-color: $color-bg;
-  background-size: contain;
-  background-repeat: repeat;
-  background-blend-mode: color-dodge;
+body:after {
+	content: '';
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background: url('https://res.cloudinary.com/dhoecmw9w/image/upload/v1650377128/production/surface_zogafn.jpg')
+		center center;
+	background-color: $color-bg;
+	background-size: contain;
+	background-repeat: repeat;
+	background-blend-mode: color-dodge;
 }
-
 
 /* =========== general styles ============ */
 .container {
-  width: $container-width-lg;
-  margin: 0 auto;
+	width: $container-width-lg;
+	margin: 0 auto;
 }
 
 h1,
@@ -53,96 +54,98 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 500;
+	font-weight: 900;
+	text-shadow: 2px 2px 4px #000000;
 }
 
 h1 {
-  font-size: 2.5rem;
+	font-size: 2.5rem;
 }
 
 section {
-  margin-top: 7rem;
-  padding-top: 0.8rem;
-  min-height: 100vh;
+	margin-top: 2rem;
+	padding-top: 2rem;
+	min-height: 100vh;
 }
 
 section > h2,
-section > h5 {
-  text-align: center;
-  color: $color-light;
+section > h5,
+section > h1 {
+	text-align: center;
+	color: $color;
 }
 
 section > h2 {
-  color: $color;
-  margin-bottom: 3rem;
-  font-size: 2rem;
+	color: $color;
+	margin-bottom: 3rem;
+	font-size: 2rem;
 }
 
 section > h5 {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 .text-light {
-  color: $color-light;
+	color: $color-light;
 }
 
 a {
-  color: $color;
-  transition: $transition;
-  &:hover {
-    color: $white;
-  }
+	color: $color;
+	transition: $transition;
+	&:hover {
+		color: $color-light;
+	}
 }
 
 .btn {
-  width: max-content;
-  display: inline-block;
-  color: $color;
-  padding: 0.75rem 1.2rem;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  border: 1px solid $color;
-  transition: $transition;
-  &:hover {
-    background: $white;
-    color: $color-bg;
-    border-color: transparent;
-  }
+	width: max-content;
+	display: inline-block;
+	color: $color;
+	padding: 0.75rem 1.2rem;
+	border-radius: 0.4rem;
+	cursor: pointer;
+	border: 1px solid $color;
+	transition: $transition;
+	&:hover {
+		background: $white;
+		color: $color-bg;
+		border-color: transparent;
+	}
 }
 
 .btn-primary {
-  background: $color-cta;
-  color: $color-bg;
+	background: $color-cta;
+	color: $color;
 }
 
 img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
+	display: block;
+	width: 100%;
+	object-fit: cover;
 }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
-  .container {
-    width: $container-width-md;
-  }
+	.container {
+		width: $container-width-md;
+	}
 
-  body:after{
-    background-size: cover;
-  }
+	body:after {
+		background-size: cover;
+	}
 
-  section {
-    margin-top: 6rem;
-  }
+	section {
+		margin-top: 6rem;
+	}
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
-  .container {
-    width: $container-width-sm;
-  }
+	.container {
+		width: $container-width-sm;
+	}
 
-  section > h2 {
-    margin-bottom: 2rem;
-  }
+	section > h2 {
+		margin-bottom: 2rem;
+	}
 }

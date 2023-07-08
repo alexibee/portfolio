@@ -1,9 +1,19 @@
 @import '../../index.scss';
 
 .about__container {
+	margin-top: 40px;
 	display: grid;
 	grid-template-columns: 35% 50%;
 	gap: 15%;
+}
+
+.header__container {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 30px;
 }
 
 // .about__me {
@@ -37,13 +47,42 @@
 	border: 1px solid transparent;
 	border-radius: 1rem;
 	padding: 2rem 2rem 1rem 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 	transition: $transition;
+	height: 350px;
+	transform-style: preserve-3d;
+	transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+		translateY(var(--translate-y, 0));
 	&:hover {
 		background: $color-gradient-light;
 		border-color: $color-cta;
-		cursor: default;
+		cursor: pointer;
 	}
+}
+
+.about__card .front {
+	margin: 0 auto;
+	padding: 5rem;
+}
+
+.about__card .back {
+	padding: 1rem 2rem;
+	transform: rotateY(180deg);
+}
+
+.back,
+.front {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.about__card.flip {
+	--rotate-y: 180deg;
 }
 
 .about__icon {
@@ -62,8 +101,16 @@
 
 .about__content p {
 	margin: 2rem 0;
-	color: $color-light;
+	color: $color;
 	font-size: 0.9rem;
+}
+
+/* =============== CTA ============== */
+.cta {
+	margin-top: 2.5rem;
+	display: flex;
+	gap: 1.2rem;
+	justify-content: center;
 }
 
 /* =============== SOCIALS ============== */
@@ -72,6 +119,11 @@
 	justify-content: center;
 	font-size: 2.2rem;
 	gap: 3rem;
+	a {
+		&:hover {
+			color: $color-cta;
+		}
+	}
 }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */

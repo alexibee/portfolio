@@ -1,72 +1,70 @@
 @import '../../index.scss';
 
-nav ul{
-  background: rgba(0, 0, 0, 0.3);
-  width: max-content;
-  display: block;
-  padding: 0.7rem 1.7rem;
-  z-index: 2;
-  position: fixed;
-  right: -9rem;
-  top: 45%;
-  transform: rotate(90deg);
-  display: flex;
-  gap: 1.5rem;
-  border: 1px solid $color-cta;
-  border-radius: 3rem;
-  backdrop-filter: blur(15px);
+nav ul {
+	background: rgba(0, 0, 0, 0.3);
+	width: max-content;
+	display: block;
+	padding: 0.7rem 1.7rem;
+	z-index: 2;
+	position: fixed;
+	transform: translateY(-50%);
+	top: 50%;
+	right: -5%;
+	transform: rotate(90deg);
+	display: flex;
+	gap: 1.5rem;
+	border: 1px solid $color-cta;
+	border-radius: 3rem;
+	backdrop-filter: blur(15px);
 }
 
 .navlink {
-  background: transparent;
-  padding: 0.9rem;
-  border-radius: 50%;
-  transform: rotate(270deg);
-  display: flex;
-  color: $color-light;
-  font-size: 1.1rem;
-  &:hover {
-    background: rgba(0, 0, 0, 0.3);
-  }
+	background: transparent;
+	padding: 0.9rem;
+	border-radius: 50%;
+	transform: rotate(270deg);
+	display: flex;
+	color: $color-light;
+	font-size: 1.1rem;
+	&:hover {
+		background: rgba(0, 0, 0, 0.3);
+	}
 }
 
 .active {
-  background: darken($color,10%);
-  color: $color-bg;
+	background: darken($color, 10%);
+	color: $color-bg;
 }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
-  nav ul{
-    right: -8rem;
-    padding: 0.5rem 0.5rem;
-    .navlink {
-      font-size: 1rem;
-    }
-  }
+	nav ul {
+		padding: 0.5rem 0.5rem;
+		.navlink {
+			font-size: 1rem;
+		}
+	}
 }
-
 
 /* ================ MEDIA QUERIES (SMALL/MEDIUM DEVICES) ================= */
 @media screen and (max-width: 800px) {
-  nav ul{
-    right: -8rem;
-  }
+	nav ul {
+	}
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
-  nav ul{
-    transform: none;
-    gap: 1.5rem;
-    border-radius: 3rem;
-    top: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 1rem;
-    padding: 0.5rem 1rem;
-    .navlink {
-      transform: none;
-    }
-  }
+	nav ul {
+		transform: none;
+		gap: 1.5rem;
+		border-radius: 3rem;
+		top: auto;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 1rem;
+		padding: 0.5rem 1rem;
+		.navlink {
+			transform: none;
+		}
+	}
 }

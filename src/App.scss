@@ -1,8 +1,8 @@
 @import './variables.scss';
 
 a {
-  color: $color-light;
-  &:hover {
-    color: $color;
-  }
+	color: $color;
+	&:hover {
+		color: $color-light;
+	}
 }

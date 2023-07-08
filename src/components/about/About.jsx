@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './about.scss';
 import { FaAward } from 'react-icons/fa';
+import { AiOutlineUser } from 'react-icons/ai';
 import { VscFolderLibrary } from 'react-icons/vsc';
 import Socials from './Socials';
+import CTA from './CTA';
 
 const About = () => {
+	const [flip, setFlip] = useState(false);
+
 	return (
 		<section id='about'>
-			<h5>Get To Know</h5>
-			<h2>About Me</h2>
-
+			<div className='container header__container'>
+				<h2> Hi there!</h2>
+				<div>
+					<h1>
+						My name is <span> Alexi</span>
+					</h1>
+				</div>
+				<h3>I am a Full-Stack Developer</h3>
+			</div>
 			<div className='container about__container'>
 				<div className='about__me'>
 					<div className='about__me-image'>
@@ -23,32 +33,36 @@ const About = () => {
 
 				<div className='about__content'>
 					<div className='about__cards'>
-						<article className='about__card'>
-							<FaAward className='about__icon' />
-							<h5>Education</h5>
-							<p>2022 - Le Wagon London bootcamp graduate</p>
-							<p>2014 - Music Technology BSc 1st Class Hons</p>
+						<article className={`about__card${flip ? ' flip' : ''}`}>
+							<div
+								className='front'
+								onClick={() => setFlip(!flip)}
+							>
+								<AiOutlineUser className='about__icon' />
+								<h1>About Me</h1>
+							</div>
+							<div
+								className='back'
+								onClick={() => setFlip(!flip)}
+							>
+								<p>
+									In January 2022 I quit my job as a buyer for Health and Beauty
+									products and decided to try something new. I had been playing
+									around with VBA for Excel in my previous job and liked the
+									creativity behind the process and the overall experience so
+									much that I decided to pursue a career in coding. I went
+									through a coding bootcamp and have since been working as a
+									Full Stack Developer. So far I have been mostly working with
+									JavaScript-heavy stack, so I guess you can say this is my
+									specialty. However, being at the start of my tech career, I am
+									open to experiences with any language or framework as long as
+									I learn, tackle interesting challenges, and have an actual
+									input in the success of the team.
+								</p>
+							</div>
 						</article>
-
-						{/* <article className='about__card'>
-							<VscFolderLibrary className='about__icon' />
-							<h5>Projects</h5>
-							<p>3 Projects and counting :) </p>
-						</article> */}
+						<CTA />
 					</div>
-					<p>
-						Junior Full Stack Developer with professional experience working for
-						a busy fintech start-up, participating in challenging projects both
-						as part of the team and independently, delivering value under tight
-						deadlines.
-					</p>
-
-					<a
-						href='#contact'
-						className='btn btn-primary'
-					>
-						Let's Talk
-					</a>
 				</div>
 			</div>
 		</section>

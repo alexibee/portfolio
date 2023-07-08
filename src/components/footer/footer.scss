@@ -1,65 +1,70 @@
 @import '../../index.scss';
 
 footer {
-  background: $color-gradient;
-  padding: 2rem 0;
-  text-align: center;
-  font-size: 0.9rem;
-  margin-top: 7rem;
+	background: $color-gradient;
+	padding: 2rem 0;
+	text-align: center;
+	font-size: 0.9rem;
+	margin-top: 7rem;
 }
 
 footer a {
-  color: $color;
+	color: $color;
+	&:hover {
+		color: $white;
+	}
 }
 
 .footer__logo {
-  width: 4rem;
-  margin-bottom: 2rem;
-  display: inline-block;
+	width: 4rem;
+	margin-bottom: 2rem;
+	display: inline-block;
 }
 
 .permalinks {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0 auto 3rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+	margin: 0 auto 3rem;
+	a:hover {
+		color: $color-cta;
+	}
 }
 
 .footer__socials {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 4rem;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 4rem;
 }
 
 .footer__socials a {
-  background: $color-bg;
-  color: $white;
-  padding: 0.8rem;
-  border-radius: 0.7rem;
-  display: flex;
-  border: 1px solid transparent;
-  &:hover {
-    background: transparent;
-    color: $color-cta-variant;
-    border-color: $color-bg;
-  }
+	background: $color-bg;
+	color: $white;
+	padding: 0.8rem;
+	border-radius: 0.7rem;
+	display: flex;
+	border: 1px solid transparent;
+	&:hover {
+		background: transparent;
+		border-color: $color-cta;
+	}
 }
 
 .footer__copyright {
-  margin-bottom: 4rem;
-  color: $color;
+	margin-bottom: 4rem;
+	color: $color;
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
-  .permalinks {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
+	.permalinks {
+		flex-direction: column;
+		gap: 1.5rem;
+	}
 
-  .footer__socials {
-    margin-bottom: 2.6rem;
-  }
+	.footer__socials {
+		margin-bottom: 2.6rem;
+	}
 }
