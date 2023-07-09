@@ -1,6 +1,7 @@
 import React from 'react';
 import './nav.scss';
 import { AiOutlineHome } from 'react-icons/ai';
+import { AiOutlineUser } from 'react-icons/ai';
 import { AiOutlineRead } from 'react-icons/ai';
 import { AiOutlineFolderOpen } from 'react-icons/ai';
 import { BiMessageSquareDetail } from 'react-icons/bi';

@@ -59,7 +59,7 @@ const Portfolio = () => {
 										<img
 											src={image}
 											alt={title}
-											style={{ height: '40vh', resize: '0.5' }}
+											style={{ height: '40vh', objectFit: 'contain' }}
 										/>
 									</div>
 								</a>

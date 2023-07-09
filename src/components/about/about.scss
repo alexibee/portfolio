@@ -52,8 +52,12 @@
 	align-items: center;
 	text-align: center;
 	transition: $transition;
-	height: 350px;
+	min-height: 430px;
+	height: fit-content;
 	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+		translateY(var(--translate-y, 0));
 	transform: perspective(1000px) rotateY(var(--rotate-y, 0))
 		translateY(var(--translate-y, 0));
 	&:hover {
@@ -63,18 +67,18 @@
 	}
 }
 
-.about__card .front {
-	margin: 0 auto;
-	padding: 5rem;
-}
-
 .about__card .back {
-	padding: 1rem 2rem;
 	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	padding: 0 1rem;
 }
 
 .back,
 .front {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 100%;
 	position: absolute;
