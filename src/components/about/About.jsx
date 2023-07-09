@@ -46,11 +46,11 @@ const About = () => {
 								onClick={() => setFlip(!flip)}
 							>
 								<p>
-									In January 2022 I quit my job as a buyer for Health and Beauty
-									products and decided to try something new. I had been playing
-									around with VBA for Excel in my previous job and liked the
-									creativity behind the process and the overall experience so
-									much that I decided to pursue a career in coding. I went
+									In January 2022 I quit my job as a buyer within health &
+									beauty industry and decided to try something new. I had been
+									playing around with VBA for Excel in my previous job and liked
+									the creativity behind the process and the overall experience
+									so much that I decided to pursue a career in coding. I went
 									through a coding bootcamp and have since been working as a
 									Full Stack Developer. <br /> So far I have been mostly working
 									with JavaScript-heavy stack, so I guess you can say this is my
