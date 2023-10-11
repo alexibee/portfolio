@@ -11,7 +11,7 @@ const Header = () => {
 					<h5 className='text-light'>Full-Stack Developer</h5>
 					<CTA />
 				</div>
-				<div className='me'>
+				{/* <div className='me'>
 					<div className='me__inner'>
 						<div className='me__inner-logo'>
 							<img
@@ -37,8 +37,8 @@ const Header = () => {
 								</svg>
 							</a>
 						</div>
-					</div>
-				</div>
+					</div> */}
+				{/* </div> */}
 			</div>
 		</header>
 	);

@@ -13,7 +13,7 @@ const App = () => {
 		<>
 			<Nav />
 			<Scrollspy>
-				{/* <Header /> */}
+				<Header />
 				<About />
 				{/* <Experience /> */}
 				<Portfolio />
