@@ -1,16 +1,92 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './header.scss';
 import CTA from './CTA';
+import CubeCanvas from '../../3d/Cube';
+import {
+	AnimatePresence,
+	motion,
+	useAnimation,
+	useInView,
+	useMotionValue,
+	useTransform,
+} from 'framer-motion';
+import About from '../about/About';
+import Contact from '../contact/Contact';
+import Experience from '../experience/Experience';
+import Portfolio from '../portfolio/Portfolio';
+import Skills from '../skills/Skills';
+import Links from '../links/Links';
 
 const Header = () => {
+	const [isSomeClicked, setIsSomeClicked] = useState(false);
+	// const cubeVariants = {
+	// 	clicked: { opacity: 1, y: '-35%', width: '100px' },
+	// 	unClicked: { opacity: [0, 1], y: 0 },
+	// };
+
+	// useEffect(() => {
+	// 	if (isSomeClicked) {
+	// 		console.log('clicked');
+
+	// 		animationControls.start(cubeVariants.clicked);
+	// 	} else {
+	// 		console.log('unClicked');
+	// 		animationControls.start(cubeVariants.unClicked);
+	// 	}
+	// 	return () => {
+	// 		animationControls.stop();
+	// 	};
+	// }, [isSomeClicked]);
+
 	return (
 		<header id='home'>
-			<div className='container header__container'>
-				<div>
+			<div className='top-nav'>
+				<motion.h1
+					animate={{ opacity: [0, 1, 0] }}
+					transition={{ ease: 'easeOut', delay: 1, duration: 3 }}
+					className='gradient-text'
+					id='welcome'
+				>
+					Welcome.
+				</motion.h1>
+				{!isSomeClicked && (
+					<motion.h1
+						animate={{ opacity: [0, 1] }}
+						transition={{ ease: 'easeOut', delay: 2, duration: 2 }}
+						className='gradient-text'
+						id='pick-side'
+					>
+						Pick your side
+					</motion.h1>
+				)}
+			</div>
+			<div className='header__container'>
+				<div className='cube-container'>
+					<CubeCanvas
+						isSomeClickedState={{ isSomeClicked, setIsSomeClicked }}
+					/>
+				</div>
+				{isSomeClicked ? (
+					<motion.div
+						animate={{ opacity: [0, 1], y: ['20%', '-3%'] }}
+						transition={{ ease: 'easeOut', duration: 1 }}
+						className='component-container'
+					>
+						<Links />
+						{/* <About /> */}
+						{/* <Experience /> */}
+						{/* <Portfolio /> */}
+						{/* <Contact /> */}
+						{/* <Skills /> */}
+					</motion.div>
+				) : (
+					<div></div>
+				)}
+				{/* <div>
 					<h1>Alexi Brehovs</h1>
 					<h5 className='text-light'>Full-Stack Developer</h5>
 					<CTA />
-				</div>
+				</div> */}
 				{/* <div className='me'>
 					<div className='me__inner'>
 						<div className='me__inner-logo'>

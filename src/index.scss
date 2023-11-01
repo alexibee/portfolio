@@ -1,5 +1,5 @@
 @import './variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
 
 * {
 	margin: 0;
@@ -20,11 +20,11 @@ html {
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: $color;
 	background-color: $color-bg;
 	line-height: 1.7;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 body:after {
@@ -37,20 +37,18 @@ body:after {
 	z-index: -1;
 	background-image: radial-gradient(
 		circle at top right,
-		rgb(11, 11, 11) 70%,
+		rgb(18, 17, 17) 70%,
 		hsl(270, 100%, 50%),
 		hsl(240, 100%, 50%),
 		hsl(210, 100%, 50%)
 	);
-	background-size: contain;
-	background-repeat: repeat;
-	background-blend-mode: color-dodge;
 }
 
 /* =========== general styles ============ */
 .container {
 	width: $container-width-lg;
 	margin: 0 auto;
+	height: 100vh;
 }
 
 h1,
@@ -65,11 +63,10 @@ h1 {
 	font-size: 2.5rem;
 }
 
-section {
-	margin-top: 2rem;
-	padding-top: 2rem;
-	min-height: 100vh;
-}
+// section {
+// 	margin-top: 2rem;
+// 	padding-top: 2rem;
+// }
 
 section > h2,
 section > h5,
@@ -85,6 +82,23 @@ section > h2 {
 }
 
 section > h5 {
+	font-size: 1rem;
+}
+
+main > h2,
+main > h5,
+main > h1 {
+	text-align: center;
+	color: $color;
+}
+
+main > h2 {
+	color: $color;
+	margin-bottom: 3rem;
+	font-size: 2rem;
+}
+
+main > h5 {
 	font-size: 1rem;
 }
 
@@ -127,6 +141,35 @@ img {
 	object-fit: cover;
 }
 
+.cube-face {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #333;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.gradient-text {
+	background-color: #7604eb;
+	background-image: linear-gradient(to right, #5301a5, #7604eb, #084dfe);
+	background-size: 100%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+}
+
+.text-bold {
+	font-weight: 800;
+}
+
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
 	.container {
@@ -137,9 +180,9 @@ img {
 		background-size: cover;
 	}
 
-	section {
-		margin-top: 6rem;
-	}
+	// section {
+	// 	margin-top: 6rem;
+	// }
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
@@ -149,6 +192,9 @@ img {
 	}
 
 	section > h2 {
+		margin-bottom: 2rem;
+	}
+	main > h2 {
 		margin-bottom: 2rem;
 	}
 }

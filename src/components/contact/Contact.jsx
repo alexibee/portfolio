@@ -22,9 +22,9 @@ const Contact = () => {
 
 	return (
 		<section id='contact'>
-			<h2>Get In Touch</h2>
+			<h1 className='gradient-text'>Get In Touch</h1>
 
-			<div className='container contact__container'>
+			<div className='contact__container'>
 				<div className='contact__options'>
 					<a
 						href='mailto:aleksejs.brehovs@gmail.com'

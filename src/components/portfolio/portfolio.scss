@@ -2,26 +2,30 @@
 
 .portfolio__container {
 	display: grid;
-	grid-template-columns: 1fr;
-	gap: 6rem;
+	grid-template-columns: 1fr 1fr;
+	gap: 10rem;
+	padding: 20px 100px;
+	h1 {
+		margin-top: 0;
+	}
 }
 
-.carousel {
-	border-radius: 2rem;
+.portfolio-item-wrapper {
+	border-radius: 2.2rem;
+	padding: 5px;
+	background: linear-gradient(45deg, #5301a5, #7604eb, #084dfe);
 }
 
 .portfolio__item {
+	overflow: hidden;
 	border-radius: 2rem;
-	border: 1px solid $color-light;
 	transition: $transition;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 
 	.portfolio__item-image {
-		height: 40vh;
 		border-radius: 1.5rem;
-		overflow: hidden;
 		display: flex;
 		transition: $transition;
 		img {
@@ -31,10 +35,38 @@
 }
 
 .portfolio__item-description {
-	margin: 2.2rem 0;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	color: transparent;
+	padding: 2rem 0;
+	.text-container {
+		max-width: 300px;
+		h3 {
+			margin: 0.1rem 0;
+		}
+		p {
+			font-size: 0.7rem;
+		}
+	}
+	.btn {
+		color: transparent;
+		border: 1px solid transparent;
+	}
+	&:hover {
+		transition: $transition;
+		background-color: rgba(0, 0, 0, 0.8);
+		color: white;
+		.btn {
+			color: white;
+			border: 1px solid white;
+			&:hover {
+				background-color: white;
+				color: $color-bg;
+			}
+		}
+	}
 }
 
 .portfolio__item h3 {
@@ -45,6 +77,24 @@
 	display: flex;
 	gap: 1rem;
 	margin: 1rem 0;
+}
+
+.modal__close {
+	position: relative;
+	height: 100%;
+	button {
+		position: absolute;
+		right: -20px;
+		top: -30px;
+		cursor: pointer;
+		background-color: transparent;
+		color: white;
+		font-size: 2rem;
+		transition: $transition;
+		&:hover {
+			color: #5301a5;
+		}
+	}
 }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
@@ -63,6 +113,7 @@
 	.portfolio__container {
 		grid-template-columns: 1fr;
 		gap: 1rem;
+		padding: 0;
 	}
 	.portfolio__item-image {
 		height: 50px;

@@ -1,74 +1,73 @@
 @import '../../index.scss';
 
 .experience__container {
-  display: grid;
-  grid-template-columns: 0.6fr;
-  justify-content: center;
-  gap: 2rem;
+	display: grid;
+	grid-template-columns: 0.6fr;
+	justify-content: center;
+	gap: 2rem;
 }
 
 .experience__container > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: $color-gradient;
-  border-radius: 2rem;
-  border: 1px solid transparent;
-  transition: $transition;
-  margin-bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: $color-gradient;
+	border-radius: 2rem;
+	border: 1px solid transparent;
+	transition: $transition;
+	margin-bottom: 2rem;
 }
 
 .experience__container > div:hover {
-  background: $color-gradient-light;
-  border-color: $color-cta;
-  cursor: default;
+	background: $color-gradient-light;
+	border-color: $color-cta;
+	cursor: default;
 }
 
 .experience__container > div h3 {
-  text-align: center;
-  margin: 2rem 0;
-  color: $color-cta;
+	text-align: center;
+	margin: 2rem 0;
+	color: $color-cta;
 }
 
 .experience__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  row-gap: 2rem;
-  column-gap: 14rem;
-  padding: 3rem 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	row-gap: 2rem;
+	column-gap: 14rem;
+	padding: 3rem 0;
 }
 
 .experience__details {
-  display: flex;
+	display: flex;
 }
 
 .experience__details-icon {
-  margin-top: 6px;
-  margin-right: 1rem;
-  color: $color-cta;
+	margin-top: 6px;
+	margin-right: 1rem;
+	color: $color-cta;
 }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
-  .experience__container {
-    grid-template-columns: 1fr;
-  }
+	.experience__container {
+		grid-template-columns: 1fr;
+	}
 
-  .experience__content {
-    padding: 2rem 1rem 3rem 1rem;
-    column-gap: 6rem;
-  }
+	.experience__content {
+		padding: 2rem 1rem 3rem 1rem;
+		column-gap: 6rem;
+	}
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
-  .experience__container {
-    grid-template-columns: 1fr;
-  }
+	.experience__container {
+		grid-template-columns: 1fr;
+	}
 
-  .experience__content {
-    column-gap: 2rem;
-  }
-
+	.experience__content {
+		column-gap: 2rem;
+	}
 }

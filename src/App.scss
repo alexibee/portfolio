@@ -1,8 +1,50 @@
 @import './variables.scss';
 
-a {
-	color: $color;
-	&:hover {
-		color: $color-light;
+// a {
+// 	color: $color;
+// 	&:hover {
+// 		color: $color-light;
+// 	}
+// }
+main {
+	text-align: center;
+	min-height: 100vh;
+	padding-top: 0.5rem;
+	h5 {
+		font-size: 1rem;
 	}
+}
+
+.top-nav {
+	display: flex;
+	flex-direction: column;
+	letter-spacing: 0.1rem;
+	line-height: 3rem;
+}
+
+#pick-side {
+	align-self: center;
+}
+#welcome {
+	margin-left: 15%;
+	align-self: start;
+}
+
+.cube-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.component-container {
+	width: 100%;
+}
+
+.header__container {
+	height: 100%;
+	// text-align: center;
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: space-between;
+	// align-items: center;
 }
